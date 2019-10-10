@@ -12,6 +12,10 @@ func UpdateQuality(items []*Item) {
 			if items[i].quality > 0 {
 				if items[i].name != "Sulfuras, Hand of Ragnaros" {
 					items[i].quality = items[i].quality - 1
+
+					if items[i].name != "Conjured Mana Cake" {
+						items[i].quality -= 1
+					}
 				}
 			}
 		} else {
@@ -42,6 +46,10 @@ func UpdateQuality(items []*Item) {
 					if items[i].quality > 0 {
 						if items[i].name != "Sulfuras, Hand of Ragnaros" {
 							items[i].quality = items[i].quality - 1
+
+							if items[i].name != "Conjured Mana Cake" {
+								items[i].quality -= 2
+							}
 						}
 					}
 				} else {
